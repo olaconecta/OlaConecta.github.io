@@ -4,7 +4,7 @@
 $emailnews    = trim($_POST['emailnews']);
 $assuntonews          = 'cadastro de newsletter';
 // Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
-$emaildestinatarionews = 'ola@olaconecta.com'; 
+$emaildestinatarionews = 'olaconecta@gmail.com'; 
 
 /* Montando a mensagem a ser enviada no corpo do e-mail. */
 $mensagemnews = '<P>Cadastro de Newsletter</P>
