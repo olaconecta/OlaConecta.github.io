@@ -5,13 +5,13 @@
 // Passando os dados obtidos pelo formulário para as variáveis abaixo
 $nome     = $_POST['nome'];
 $email    = trim($_POST['email']);
-$emaildestinatario = 'ola@olaconecta.com'; // Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
+$emaildestinatario = 'olaconecta@gmail.com'; // Digite seu e-mail aqui, lembrando que o e-mail deve estar em seu servidor web
 // $ddd      	   	   = $_POST['ddd'];
 $telefone      	   = $_POST['telefone'];
 $empresa          = $_POST['empresa'];
 // $outros          = $_POST['outros'];
 $mensagem          = $_POST['mensagem'];
-$assunto          = 'email do site olaconecta';
+$assunto          = 'Email do site da Ola!';
  
 // // Cria uma variável que terá os dados do erro
 // $erro = false;
