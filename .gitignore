@@ -41,3 +41,17 @@ docs/.jekyll-metadata
 bower_components
 node_modules
 /vendor/
+dist/css/bootstrap.css
+dist/css/edu.css
+dist/css/fullpage.min.css
+dist/js/fullpage.extensions.min.js
+dist/js/fullpage.min.js
+eduardolevi/index.html
+eduardolevi/imgs/flowers.mp4
+eduardolevi/imgs/flowers.webm
+less/edu.less
+less/ola.less
+dist/css/bootstrap.css
+eduardolevi/index.html
+less/ola.less
+dist/css/bootstrap.css
