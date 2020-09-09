@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: seucontador.com.vc
+Token: d153adbe68ad8148b44d54128b26d6eec55782af9e00c93406789165e51d011d
