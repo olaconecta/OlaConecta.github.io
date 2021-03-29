@@ -8,48 +8,131 @@
     <meta name="description" content="Eduardo Levi work" />
     <meta name="keywords"  content="designer, webdesigner, ux designer, ui designer, motion designer" />
 	<meta name="Resource-type" content="Document" />
-
-
-	<link rel="stylesheet" type="text/css" href="../dist/css/edu.css" />
-	<link rel="stylesheet" type="text/css" href="../dist/css/fullpage.min.css" />
-	
-
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/edu.css" />	
 </head>
 <body>
-
-<div id="fullpage">
-	<div class="section " id="section0">
-		<video id="myVideo" loop muted data-autoplay>
-			<source src="imgs/flowers.mp4" type="video/mp4">
-			<source src="imgs/flowers.webm" type="video/webm">
-		</video>
-		<div class="layer">
-			<h1>fullPage.js videos</h1>
+	<nav class="nav-bottom">
+		<div class="container">
+			<button onclick="scrollHome()" id="btHome">Hello</button>
+			<button onclick="scroll1()" id="btCareer">Carreer</button>
+			<button onclick="scroll2()" id="btWorks">Works</button>
+			<button onclick="scroll3()" id="btMe">About me</button>
 		</div>
-	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
-	    <div class="slide" id="slide2"><h1>Tospottally customizable</h1></div>
-	</div>
-	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
-</div>
+	</nav>
+		<section id="home">	
+			<!-- <video id="Video" loop muted autoplay>
+				<source src="imgs/flowers.mp4" type="video/mp4">
+				<source src="imgs/flowers.webm" type="video/webm">
+			</video>	-->
+			<div class="container titulo">
+				<div class="col-xs-8">					
+					<h2>Hello, I'm<br> Eduardo Levi. <br>Welcome to<br> my portfolio.</h2>										
+				</div>
+				<!-- <div class="col-xs-4">					
+					<div class="moving-mouse-holder">
+						<div class="mouse">
+						  <div class="mouse-button">&nbsp;</div>
+						</div>
+						<div class="text">GO WITH <br>THE FLOW ></div>
+					  </div>
+				</div> -->
+			</div>
+		</section>
+		<section id="content1">
+			<div class="container titulo">
+				<div class="col-xs-12">
+					<h2>Career</h2>
+				</div>				
+			</div>
+			<div class="container">
+				<div class="col-xs-4">
+					<p>
+						I began my career in 2003, in the German multinational Henkel, where I was the web and digital designer responsible for the Loctite brand website, which passed through a huge website change in 2004. I joined a worldwide group designated to unify the Loctite website layout using a singular template powered by a multi-language CMS. I was sent to Los Angeles to the CMS course and after that, I was set to minister the same course in Brazil, Santiago (Chile) and Buenos Aires (Argentina). My efforts generated time and costs saving with the implementation in the whole region. I was the guy of other jobs such as motion graphics ads (using flash software), company’s online communications, hot-sites creation, email marketing designs, offline stuff, and even participated in huge events such as Formula 1 and many other international industrial fairs.
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<h3>
+						By that time I was pretty convinced all the design I made had to be orientated to the end user.
+					</h3>
+					<p>
+						After almost 3 years I decided to face a new challenge at HSM, an Argentine-brazilian multinational company, specialized in management education. 
+I was the web designer responsible for the company’s events portal, e-commerce and email marketing creation and development. I was sent to Buenos Aires to deeply learn the brand’s guide which was another enriching experience. I successfully developed several online materials engaging new leads and selling lots of events’ tickets. Also joined the team for the events, and at the Expomanagement, a huge event, I sold more than 2 hundred thousand real (brazilian currency) in forthcoming events.
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<p>
+						After a year I decided to push myself into a totally new challenge, idealizing my own company, Web It Out. It was hard at the beginning, few clients, few jobs, little money... but it gave me a whole new experience in different areas besides designing. I improved my Customer service SEO, SEM, SMM skills, and finally put me in touch with the User experience Design.
+						Speaking of which, through Web It Out I had made some important UX and UI jobs. It is relevant to list the work for the Italian telecom TIM, where I idealized a sales department app, where salesman, supervisors and managers accessed a database detailing all the team works, prospects, leads, meetings, etc.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="content1b">
+			<div class="container titulo">
+				<div class="col-xs-12">
+					<h2>&nbsp; </h2>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col-xs-4">
+					<p>
+						I did a great job for Footstats, a soccer BI platform, where I designed and developed the front-end of the Footstats social media network for desktop, responsive and the app versions. 
 
-<script type="text/javascript" src="../dist/js/fullpage.min.js"></script>
-<script type="text/javascript" src="../dist/js/fullpage.extensions.min.js"></script>
-
-
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        verticalCentered: true,
-        	: true,
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
-    });
-</script>
-
+						Also produced a prototype for the Gover app, of Kontik, a B2B travel company.
+					</p>
+				</div>
+				<div class="col-xs-4">					
+					<p>
+						Back in Brazil I had a large experience with Banks too.
+For the Rendimento bank, I was responsible for the customer journey map of the digital subscription application. Also made the responsive front-end version for that client.
+In Alfa Bank, I designed and developed (front end) for desktop and responsive versions of the personal credit website.
+At Safra Bank I set up the customer journey map, designed, prototyped and also developed the front-end for an online system for end-users.
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<p>
+						And it is worthy to cite I have done a prototype of a fashion app for C&A, a worldwide store.
+						In march 2019, I decided to idealize a new company, Olá! Alongside my wife, who is a graduate journalist, SEO and content marketing specialist.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="content2">
+			<div class="container titulo">
+				<div class="col-xs-12">
+					<h2>Works </h2>
+				</div>
+			</div>
+			<div class="container">
+				<div class="col-xs-4 work">
+					
+				</div>
+				<div class="col-xs-4 work">
+					
+				</div>
+				<div class="col-xs-4 work">
+					
+				</div>
+			</div>
+		</section>
+		<section id="content3">
+			<div class="container titulo">
+				<div class="col-xs-12">
+					<h2>About me </h2>
+				</div>
+			</div>
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script>
+			// $(function() {
+			// 	$("html, body, section").mousewheel(function(event, delta) {
+			// 	this.scrollLeft -= (delta * 10);				
+			// 	event.preventDefault();
+			// 	});
+			// });			
+		</script>
 </body>
 </html>

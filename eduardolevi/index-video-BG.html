@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Portfolio Eduardo Levi</title>
+	<meta name="author" content="Eduardo Levi" />
+    <meta name="description" content="Eduardo Levi work" />
+    <meta name="keywords"  content="designer, webdesigner, ux designer, ui designer, motion designer" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../dist/css/edu.css" />
+	<link rel="stylesheet" type="text/css" href="../dist/css/fullpage.min.css" />
+	
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section " id="section0">
+		<video id="myVideo" loop muted data-autoplay>
+			<source src="imgs/flowers.mp4" type="video/mp4">
+			<source src="imgs/flowers.webm" type="video/webm">
+		</video>
+		<div class="layer">
+			<h1>fullPage.js videos</h1>
+		</div>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+	    <div class="slide" id="slide2"><h1>Tospottally customizable</h1></div>
+	</div>
+	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+</div>
+
+<script type="text/javascript" src="js/fullpage.min.js"></script>
+<script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
+
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: true,
+        horizontalCentered	: true,
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE']
+    });
+</script>
+
+</body>
+</html>

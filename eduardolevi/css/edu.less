@@ -1,0 +1,192 @@
+html {
+	//scroll automatico
+    scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;	
+  }
+a, button {
+	cursor: pointer;
+}
+body { 
+	height: 100vw;	
+	overflow-x: visible;
+	overflow-y: hidden;
+	display: flex;
+	align-items: left;
+	margin:0;
+	padding: 0;
+}
+.nav-bottom {
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	z-index:9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	button {
+		border: 1px solid transparent;
+		background-color: transparent;
+		font-weight: bolder;
+		text-transform: uppercase;
+		color: white;
+		transition: all ease-in-out .3s;
+		&:hover, &:focus {
+			outline: unset;
+			transition: all ease-in-out .3s;
+		}
+		&#btHome {
+			&:hover, &:focus {
+				border: 1px solid white;
+				color: white;				
+			}
+		}
+		&#btCareer {
+			&:hover, &:focus {
+				border: 1px solid gold;
+				color: gold;				
+			}
+		}
+		&#btWorks {
+			&:hover, &:focus {
+				border: 1px solid hotpink;
+				color: hotpink;	
+			}
+		}
+		&#btMe {
+			&:hover, &:focus {
+				border: 1px solid cyan;
+				color: cyan;			
+			}
+		}
+	}
+}
+section {
+	width: 100vw;
+	height: 100vh;
+	min-width: 100%;
+	min-height: 100%;
+	float: left;		
+	// color: gold;
+	background-color: #222;
+	.container.titulo {
+		height: 140px;
+	}
+	h2 {
+		font-size: 82px;		
+		margin: 80px 0px 40px;
+		// color:white;
+		position: relative;		
+	}
+	h3 {
+		// color:#eee;
+		margin: 0 0 15px;
+	}
+	p {
+		// color: #eee;
+	}
+	
+}
+#home {
+	background: url('../imgs/bg.jpg') top/contain no-repeat;
+	color: white;
+	video {
+		position: absolute;
+		top:0;
+		left:0;
+		min-height: 100%;
+		min-width: 100%;
+		height: 100%;
+		width: 100%;		
+	}
+	.moving-mouse-holder {
+		margin: auto;
+		// margin-top: 60px;
+		position: fixed;
+		bottom: 20px;
+		right: 5px;
+		width: 170px;
+		.mouse {
+			width: 26px;
+			height: 36px;
+			position: relative;
+			right: 0;
+			border-radius: 18px;
+			border: 2px solid #444;
+		  }
+		  .mouse-button {
+			background-color: #444;
+			width: 4px;
+			height: 6px;
+			border-radius: 2px;
+			position: absolute;
+			top: 7px;
+			left: 50%;
+			margin: 0 0 0 -2px;
+			animation: mouse-scroll 1s infinite alternate;
+		  }
+		  .text {
+			margin-top: -30px;
+			margin-left: 40px;
+			color: #444;
+			font-size: 12px;
+			line-height: 1em;
+		  }
+		  @keyframes mouse-scroll {
+			to {
+			  transform: translate(0, 3px) scale(1, 0.4);
+			}
+		  }
+	  }
+}
+#content1, #content1b {
+	// background-color:brown;
+	color: gold;
+}
+#content2 {
+	// background-color:gold;
+	color: hotpink;
+	.work {
+		
+	}
+}
+#content3 {
+	// background-color:purple;
+	color:cyan;
+}
+
+//ScrollBar 
+/* width */
+::-webkit-scrollbar {
+	height: 4px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #333; 
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #444; 
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+  }
+
+
+  #myVideo{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	 background-color: black; /* in case the video doesn't fit the whole page*/
+	  background-image: /* our video */;
+	  background-position: center center;
+	  background-size: contain;
+	   object-fit: cover; /*cover video background */
+	   
+}
