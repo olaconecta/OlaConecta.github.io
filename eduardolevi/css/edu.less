@@ -40,30 +40,30 @@ body {
 		text-transform: uppercase;
 		color: white;
 		transition: all ease-in-out .3s;
-		&:hover, &:focus {
+		&:hover, &:focus, &.active {
 			outline: unset;
 			transition: all ease-in-out .3s;
 		}
 		&#btHome {
-			&:hover, &:focus {
+			&:hover, &:focus, &.active {
 				border: 1px solid white;
 				color: white;				
 			}
 		}
 		&#btCareer {
-			&:hover, &:focus {
+			&:hover, &:focus, &.active {
 				border: 1px solid gold;
 				color: gold;				
 			}
 		}
 		&#btWorks {
-			&:hover, &:focus {
+			&:hover, &:focus, &.active {
 				border: 1px solid hotpink;
 				color: hotpink;	
 			}
 		}
 		&#btMe {
-			&:hover, &:focus {
+			&:hover, &:focus, &.active {
 				border: 1px solid cyan;
 				color: cyan;			
 			}
@@ -71,24 +71,32 @@ body {
 	}
 }
 .container {
-	width: min(100%, 95%);
+	// width: min(100%, 95%);	
 }
 section {
 	min-width: auto;
 	max-width: auto;
 	height: 100vh;
-	float: left;		
+	max-height: 100vh;
+	float: left;	
+		
 	// color: gold;
 	background-color: #222;
 	.container {
 		display: flex;
-		flex-wrap: nowrap;
-		justify-content: space-between;		  
+  		flex-direction: row;
+  		flex-wrap: nowrap;
+  		width: 100%;
+		padding: 1.4em;
+		gap: 1em;
 		.col {
-		//   flex-basis: auto;
-		//   gap: 1rem;
-		//   flex-grow: 4;
-		  width: 250px;			  
+			flex-wrap: nowrap;
+			justify-content: space-between;	
+			display: flex;
+  			flex-direction: column;
+  			flex-basis: 90%;
+  			flex: 1;	  		
+		  	width: 45ch;			  
 		}
 	}
 	.container.titulo {
@@ -96,7 +104,7 @@ section {
 	}
 	h2 {
 		font-size: 82px;		
-		margin: 80px 0px 40px;
+		margin: 20px 0px 60px;
 		// color:white;
 		position: relative;		
 	}
@@ -106,7 +114,8 @@ section {
 	}
 	p {
 		// color: #eee;
-		font-size: 1rem;
+		font-size: 1em;
+		margin:0;
 	}
 	
 }
