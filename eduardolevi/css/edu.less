@@ -10,6 +10,7 @@
 	}
   }
   //font
+  @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 html {
 	background-color: #222;
@@ -31,8 +32,10 @@ body {
 	margin:0;
 	padding: 0;
 	font-family: 'Comfortaa', cursive;
+	color:@gold;
 }
 .nav-bottom {
+	overflow-y: hidden;
 	width: 100%;
 	position: fixed;
 	bottom:0;
@@ -94,10 +97,13 @@ section {
 		height: 140px;
 	}
 	h2 {
-		font-size: 82px;		
+		font-size: 71px;		
 		margin: 20px 0px 60px;
-		// color:white;
+		text-transform: uppercase;		
 		position: relative;		
+		background-color: @gold;
+		padding: 8px 10px 0px;
+		color:@gray;
 	}
 	h3 {
 		// color:#eee;
@@ -110,9 +116,64 @@ section {
 	}
 	
 }
+#links-sociais {
+	position: fixed;
+	bottom: 20px;
+	left: 15px;	
+	z-index: 10000;
+	margin: auto;
+	a {	
+		margin: 0 5px;
+		color:white;
+		padding: 1px 2px 0px;
+		&:hover {
+			color: @gold;
+			background-color: @gray;
+		}
+	}
+
+  }	 
+  .moving-mouse-holder {
+	margin: auto;
+	// margin-top: 60px;
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	width: 170px;
+	.mouse {
+		width: 21px;
+		height: 32px;
+		position: relative;
+		right: 0;
+		border-radius: 18px;
+		border: 2px solid white;
+	  }
+	  .mouse-button {
+		background-color: white;
+		width: 4px;
+		height: 6px;
+		border-radius: 2px;
+		position: absolute;
+		top: 7px;
+		left: 50%;
+		margin: 0 0 0 -2px;
+		animation: mouse-scroll 1s infinite alternate;
+	  }
+	  .text {
+		margin-top: -30px;
+		margin-left: 40px;
+		font-size: 12px;
+		line-height: 1em;
+		color: white;
+	  }
+	  @keyframes mouse-scroll {
+		to {
+		  transform: translate(0, 3px) scale(1, 0.4);
+		}
+	  }
+  }	
 #home {
-	background: url('../imgs/bg-home.jpg') top/cover no-repeat;
-	color: @gold;
+	background: url('../imgs/bg-home.jpg') top/cover no-repeat;	
 	min-width: 100vw;
 	video {
 		position: absolute;
@@ -120,54 +181,19 @@ section {
 		left:0;
 		min-height: 100%;
 		min-width: 100%;			
+	}	
+	h2 {
+		background-color: transparent;
+		text-transform: none;
+		color: @gold;
 	}
-	.moving-mouse-holder {
-		margin: auto;
-		// margin-top: 60px;
-		position: fixed;
-		bottom: 20px;
-		right: 5px;
-		width: 170px;
-		.mouse {
-			width: 26px;
-			height: 36px;
-			position: relative;
-			right: 0;
-			border-radius: 18px;
-			border: 2px solid white;
-		  }
-		  .mouse-button {
-			background-color: white;
-			width: 4px;
-			height: 6px;
-			border-radius: 2px;
-			position: absolute;
-			top: 7px;
-			left: 50%;
-			margin: 0 0 0 -2px;
-			animation: mouse-scroll 1s infinite alternate;
-		  }
-		  .text {
-			margin-top: -30px;
-			margin-left: 40px;
-			font-size: 12px;
-			line-height: 1em;
-			color: white;
-		  }
-		  @keyframes mouse-scroll {
-			to {
-			  transform: translate(0, 3px) scale(1, 0.4);
-			}
-		  }
-	  }	  
+	   
 }
 #content1, #content1b {
-	// background-color:brown;
-	background: url('../imgs/bg-2.jpg') top/cover no-repeat;
-	color: @gold;
-	// position: relative;
+
 }
 #content2 {
+	background: url('../imgs/bg-2.jpg') top/cover no-repeat;
 	.work {
 		
 	}
