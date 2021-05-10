@@ -256,7 +256,7 @@ section {
 		}
 	}
 }
-#content2 {
+#content2, #content2b {
 	background: url('../imgs/bg-2.jpg') top/cover no-repeat;	
 	width: 1350px;
 	.cliente {
@@ -285,18 +285,29 @@ section {
 		}
 	}
 }
+#content2b {
+	background: url('../imgs/bg-3.jpg') top/cover no-repeat;	
+}
 #content3 {
 	min-width: 1280px;
 }
 #safra {
 	// margin-top: 250px;
-	.col {
+	.col {		
 		&.img {
+			text-align: center;
 			img { 
 				border: 2px solid @gold;
 				height: auto; width: 80%;
-				max-height: 350px;
-				max-width: auto;
+			}
+		}
+		&.img2 {
+			text-align: center;
+			img {
+				border: 2px solid @gold;
+				// height: 100px;
+				width: 50%!important;
+	
 			}
 		}
 		iframe {
