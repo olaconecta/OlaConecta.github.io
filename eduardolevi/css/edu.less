@@ -2,6 +2,9 @@
 @gold:	#f1c600;
 @orange:#eb8f26;
 @gray:	#434343;
+.anima {
+	transition: all ease-in-out .25s;
+}
 //
 @media only screen and (orientation:portrait){
 	body {
@@ -67,6 +70,35 @@ body {
 .container {
 	// width: min(100%, 95%);	
 }
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: @gold;	
+	font-size: 82px;				
+	margin: 220px 0px 20px;	
+	position: relative;				
+	padding: 5px 8px 0px;
+	color:@gold;
+}
+
+#cursor {	
+	margin: 220px 0px 20px;	
+	display: inline-block;
+	vertical-align: middle;
+	width: 4px;
+	height: 90px;
+	background-color: @gold;
+	animation: blink .25s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: @gold; 
+	}
+}
 section {
 	min-width: auto;
 	max-width: auto;
@@ -81,11 +113,11 @@ section {
   		flex-direction: row;
   		flex-wrap: nowrap;
   		width: 100%;
-		padding: 1.4em;
+		padding: 1.4em 2.4em;
 		gap: 1em;
 		.col {
 			flex-wrap: nowrap;
-			justify-content: space-between;	
+			// justify-content: space-between;	
 			display: flex;
   			flex-direction: column;
   			flex-basis: 90%;
@@ -94,16 +126,17 @@ section {
 		}
 	}
 	.container.titulo {
-		height: 140px;
+		// height: 140px;
 	}
 	h2 {
-		font-size: 71px;		
-		margin: 20px 0px 60px;
+		font-size: 31px;		
+		margin: 20px 0px 20px;
+		display: block;
 		text-transform: uppercase;		
 		position: relative;		
 		background-color: @gold;
-		padding: 8px 10px 0px;
-		color:@gray;
+		padding: 5px 8px 0px;	
+		color:@gray;	
 	}
 	h3 {
 		// color:#eee;
@@ -114,7 +147,24 @@ section {
 		font-size: 1em;
 		margin:0;
 	}
-	
+	.cta {
+		color:@gold;
+		background-color: transparent;
+		border: 1px @gold solid;
+		text-transform: uppercase;
+		font-weight: bolder;
+		padding: 14px 14px 10px;
+		text-decoration: none;
+		width: 180px;
+		text-align: center;
+		margin-top: 40px;
+		.anima();
+		&:hover {
+			.anima();
+			background-color: @gold;			
+			color: @gray;
+		}
+	}
 }
 #links-sociais {
 	position: fixed;
@@ -189,13 +239,42 @@ section {
 	}
 	   
 }
-#content1, #content1b {
-
+#content1, #content1b {	
+	.skills {
+		margin-top: -50px;
+		margin-left: 150px;
+		width: 700px;
+		h3 {
+			// background-color: @gray;
+			text-transform: uppercase;
+			// padding: 1px 2px 0px;
+			// width: 0px;
+		}
+		img {
+			width: 400px;
+			height: auto;
+		}
+	}
 }
 #content2 {
-	background: url('../imgs/bg-2.jpg') top/cover no-repeat;
-	.work {
-		
+	background: url('../imgs/bg-2.jpg') top/cover no-repeat;	
+	width: 1900px;
+	.cliente {
+		display: block;
+		margin: -30px 0px;	
+	}
+	.col {
+		// width: 45ch;
+		.bloco {
+			width: 30ch;
+			height: 170px;
+			h3 {
+				margin: 40px 0 10px;
+			}	
+			ul {
+				list-style: square;
+			}
+		}
 	}
 }
 #content3 {
