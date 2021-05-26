@@ -42,6 +42,10 @@ function scrollHome() {
     btCareer.classList.remove('active');
     btWorks.classList.remove('active');
   } 
+  function safraMais() {
+    var elmnt = document.getElementById("safra");
+    elmnt.scrollIntoView();    
+  } 
 
 //   function scrollWin() {
 //     window.scrollTo(500, 0);

@@ -1,9 +1,20 @@
 // variáveis
 @gold:	#f1c600;
+@gold-transp:  rgba(241,194,50,.15);
 @orange:#eb8f26;
 @gray:	#434343;
+
+* {
+	box-sizing: border-box;
+}
 .anima {
 	transition: all ease-in-out .25s;
+}
+.vidro {
+	background-color: rgba(241,194,50,.1);
+	backdrop-filter: blur(5px);
+	border-top: .5px solid @gold-transp;
+	border-left: .5px solid @gold-transp;
 }
 //
 @media only screen and (orientation:portrait){
@@ -152,11 +163,11 @@ section {
 	}
 	.cta {
 		color:@gold;
-		background-color: transparent;
-		border: 1px @gold solid;
+		.vidro();
+		// border: 1px @gold solid;
 		text-transform: uppercase;
 		font-weight: bolder;
-		padding: 14px 14px 10px;
+		padding: 21px 21px 17px;
 		text-decoration: none;
 		width: 180px;
 		text-align: center;
@@ -166,6 +177,7 @@ section {
 			.anima();
 			background-color: @gold;			
 			color: @gray;
+			box-shadow: 0 0 1em 0 @gold, 0 0 2em 0 @gold, 0 0 4em 0 @gold; 
 		}
 	}
 }
@@ -259,12 +271,16 @@ section {
 		}
 	}
 }
-#content2, #content2b {
+#content2, #content2b {		
 	background: url('../imgs/bg-2.jpg') top/cover no-repeat;	
 	width: 1350px;
+	min-width: 1350px;
 	.cliente {
 		display: block;
 		margin: -30px 0px;	
+		p{
+			font-size: 21px;
+		}
 	}
 	.col {
 		// width: 45ch;
@@ -273,10 +289,34 @@ section {
 			height: 170px;
 			h3 {
 				margin: 40px 0 10px;
+				font-weight: bold;
+				font-style: italic;
+				position: relative;
+				z-index: 10;
+				left:0;
+				.fas {
+					position: relative;
+					
+					&.fa-location-arrow {
+						transform: rotate(180deg);
+						z-index: 12;
+						font-size: 14px;
+						// color: ivory;
+						right:-1.57em;
+						
+						top:-.57em;
+					}
+					&.fa-bullseye {
+						z-index: 11;
+						
+
+					}
+				}
 			}	
 			ul {
 				list-style: square;
 			}
+			p, ul li{font-weight: 100;}
 		}
 		&.img {
 			margin-top:0px;
@@ -294,7 +334,9 @@ section {
 #content3 {
 	min-width: 1280px;
 }
-#safra {
+#safra, #safra2 {
+	overflow-y: hidden;
+	overflow:hidden;
 	// margin-top: 250px;
 	.col {		
 		&.img {
@@ -320,7 +362,7 @@ section {
 
 }
 .safra-bg {
-	background: url('../imgs/bg-2.jpg') center/cover no-repeat;	
+	// background: url('../imgs/bg-2.jpg') center/cover no-repeat;	
 }
 .footstats-bg {
 	background: url('../imgs/bg-3.jpg') bottom/cover no-repeat;	
@@ -359,4 +401,11 @@ section {
 	  background-size: contain;
 	   object-fit: cover; /*cover video background */
 	   
+}
+
+
+
+// ?? GLASS 
+.vidro(@cor, @borda, @fundo,) {
+
 }
