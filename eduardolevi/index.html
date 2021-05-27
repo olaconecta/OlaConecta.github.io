@@ -67,7 +67,7 @@
 		<section id="content2">
 			<div class="container titulo">
 				<div class="">
-					<h2 data-tilt=""><span>Safra</span></h2>
+					<h2 data-tilt=""><span data-tilt="">Safra</span></h2>
 				</div>
 			</div>
 			<div class="container cliente">				
@@ -148,7 +148,7 @@
 		<section id="content2b">
 			<div class="container titulo">
 				<div class="">
-					<h2><span>Footstats</span></h2>
+					<h2 data-tilt=""><span data-tilt="">Footstats</span></h2>
 				</div>
 			</div>
 			<div class="container cliente">
@@ -262,6 +262,10 @@
 			// 	});
 			// });			
 			$('.cta').tilt({
+				glare: true,
+				maxGlare: .5
+			})
+			$('h2 span').tilt({
 				glare: true,
 				maxGlare: .5
 			})
