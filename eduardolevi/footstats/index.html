@@ -58,7 +58,7 @@
 				</div>					
 			</div>
 		</section>		
-		<section id="safra">
+		<section id="safra2">
 			<div class="container titulo">
 				<div class="">
 					<h2 style="background-color: transparent;">&nbsp;</h2>
@@ -85,15 +85,21 @@
 			</div>
 		</section>		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-		<script type="text/javascript" src="../js/app.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
 		<script>
 			// $(function() {
 			// 	$("html, body, section").mousewheel(function(event, delta) {
 			// 	this.scrollLeft -= (delta * 10);				
 			// 	event.preventDefault();
 			// 	});
-			// });			
+			// });	
+			$('img').tilt({
+				glare: true,
+				maxGlare: .5
+			})		
 		</script>
 </body>
 </html>
